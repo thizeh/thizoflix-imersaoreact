@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
-
+// so pra commitar
 function CadastroCategoria() {
   const valoresIniciais = {
     nome: '',
