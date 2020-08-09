@@ -15,7 +15,7 @@ function getAll() {
 }
 
 function getAllWithVideos() {
-  return fetch(`${URL_CATEGORIES}?_embeb=videos`)
+  return fetch(`${URL_CATEGORIES}?_embed=videos`)
     .then(async (respostaDoServidor) => {
       if (respostaDoServidor.ok) {
         const resposta = await respostaDoServidor.json();

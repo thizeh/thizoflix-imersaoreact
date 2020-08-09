@@ -12,8 +12,8 @@ function CadastroVideo() {
   const [categorias, setCategorias] = useState([]);
   const categoryTitles = categorias.map(({ titulo }) => titulo);
   const { handleChange, values } = useForm({
-    tiutlo: 'Video padrão',
-    url: 'https://www.youtube.com/watch?v=wXMD6wmcwvE',
+    titulo: 'Video padrão',
+    url: 'https://www.youtube.com/watch?v=jOAU81jdi-c',
     categoria: 'Front End',
   });
 
@@ -31,7 +31,7 @@ function CadastroVideo() {
 
       <form onSubmit={(event) => {
         event.preventDefault();
-        // alert('Video Cadastrado com sucesso!!!!');
+        // alert('Video Cadastrado com sucesso!!!1!');
 
         const categoriaEscolhida = categorias.find((categoria) => {
           return categoria.titulo === values.categoria;
@@ -40,7 +40,7 @@ function CadastroVideo() {
         videosRepository.create({
           titulo: values.titulo,
           url: values.url,
-          categoriasId: categoriaEscolhida.id,
+          categoriaId: categoriaEscolhida.id,
         })
           .then(() => {
             console.log('Cadastrou com sucesso!');

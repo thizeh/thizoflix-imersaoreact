@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Red Rose', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -22,7 +22,7 @@ body {
 
 a {
   color: inherit;
-}
+} 
 
 #root {
   min-height: calc(100vh - var(--bodyPaddingTop));
